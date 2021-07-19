@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import './style.css';
 import './App.css';
+import imageLike from "./spr5.jpg"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{border:"solid 1px black", maxWidth:"100vw"}}>
+        <h1 className="title red">Ammar Hadil</h1>
+        <br />
+        <br />
+        <img  width="300" height="300" src={imageLike} alt="like emoticone" />
+        <br />
+        <br />
+        <img width="300" height="300"  src="/spr8.jpg" alt="funny emoticone" />
+      
+      </div> 
+      <br />
+      <iframe width="300" height="300" src="https://www.youtube.com/embed/7fPXI_MnBOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   );
 }
